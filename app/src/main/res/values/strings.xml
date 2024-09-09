@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AF Wear App</string>
+
+    <string name="start_walking_workout_button_text">Start Workout</string>
+    <string name="stop_walking_workout_button_text">Stop Workout</string>
+</resources>
