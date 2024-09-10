@@ -1,10 +1,12 @@
 [versions]
 androidGradlePlugin = "8.6.0"
-androidxComposeBom = "2024.09.00"
-androidxComposeMaterialIcons = "1.7.0"
+androidxCoreKtx = "1.13.1"
+androidxComposeBom = "2024.09.01"
+androidxComposeMaterialIcons = "1.7.1"
 androidxWearCompose = "1.4.0"
 androidxActivityCompose = "1.9.2"
 androidxCoreSplashscreen = "1.0.1"
+androidxLifecycleRuntimeKtx = "2.8.5"
 coil = "2.7.0"
 googleHorologist = "0.7.1-alpha"
 kotlin = "2.0.0"
@@ -12,13 +14,16 @@ kotlin-serialization = "1.6.3"
 
 [libraries]
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivityCompose" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidxLifecycleRuntimeKtx" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCoreKtx" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
 androidx-compose-material-icons = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "androidxComposeMaterialIcons" }
 androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
-androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "androidxCoreSplashscreen" }
 coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil"}
 kotlin-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlin-serialization" }

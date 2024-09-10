@@ -1,3 +1,5 @@
+@file:Suppress("UnstableApiUsage")
+
 pluginManagement {
     repositories {
         google {
@@ -20,5 +22,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "WearApp"
-include(":app")
- 
+include(":wearapp")
+include(":phoneapp")
