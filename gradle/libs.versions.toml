@@ -1,11 +1,11 @@
 [versions]
 androidGradlePlugin = "8.6.0"
 androidxComposeBom = "2024.09.00"
-androidxComposeMaterial = "1.4.0"
 androidxComposeMaterialIcons = "1.7.0"
 androidxWearCompose = "1.4.0"
 androidxActivityCompose = "1.9.2"
 androidxCoreSplashscreen = "1.0.1"
+coil = "2.7.0"
 googleHorologist = "0.7.1-alpha"
 kotlin = "2.0.0"
 kotlin-serialization = "1.6.3"
@@ -20,21 +20,26 @@ androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "androidxCoreSplashscreen" }
+coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil"}
 kotlin-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlin-serialization" }
 
 # Wear navigation
 androidx-wear-compose-navigation = { group = "androidx.wear.compose", name = "compose-navigation", version.ref = "androidxWearCompose" }
 # Wear material
-androidx-wear-compose-material = { group = "androidx.wear.compose", name = "compose-material", version.ref = "androidxComposeMaterial" }
+androidx-wear-compose-material = { group = "androidx.wear.compose", name = "compose-material", version.ref = "androidxWearCompose" }
 # Wear foundation
 androidx-wear-compose-foundation = { group = "androidx.wear.compose", name = "compose-foundation", version.ref = "androidxWearCompose" }
-# Wear preview annotations
+# Wear compose preview
 androidx-wear-compose-ui-tooling = { group = "androidx.wear.compose", name = "compose-ui-tooling", version.ref = "androidxWearCompose" }
+# Wear tile previews
+androidx-wear-tiles-tooling = { group = "androidx.wear.tiles", name = "tiles-tooling", version.ref = "androidxWearCompose" }
+androidx-wear-tiles-tooling-preview = { group = "androidx.wear.tiles", name = "tiles-tooling-preview", version.ref = "androidxWearCompose" }
 # Horologist layout (e.g. screenScaffold, rememberResponsiveColumnState, type-safe navigation)
 google-horologist-compose-layout = { group = "com.google.android.horologist", name = "horologist-compose-layout", version.ref = "googleHorologist" }
 # Horogloist material (e.g. responsiveListHeader, firstItemPadding)
 google-horologist-compose-material = { group = "com.google.android.horologist", name = "horologist-compose-material", version.ref = "googleHorologist" }
-
+# Tiles
+google-horologist-tiles = { group = "com.google.android.horologist", name = "horologist-tiles", version.ref = "googleHorologist" }
 
 
 [plugins]

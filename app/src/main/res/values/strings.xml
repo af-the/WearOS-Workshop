@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">AF Wear App</string>
 
+
+    <!-- TileService -->
+    <string name="tile_description">AF Tile</string>
+    <string name="tile_label">AF Tile</string>
+    <string name="tile_messaging_create_new">New</string>
+    <string name="tile_messaging_search">Search</string>
+    <string name="title_activity_tile">TileActivity</string>
+
+    <!-- Workout -->
     <string name="start_walking_workout_button_text">Start Workout</string>
     <string name="stop_walking_workout_button_text">Stop Workout</string>
 </resources>

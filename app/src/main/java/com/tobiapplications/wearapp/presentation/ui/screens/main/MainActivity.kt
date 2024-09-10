@@ -32,6 +32,6 @@ class MainActivity : ComponentActivity() {
 
 @WearPreviewDevices
 @Composable
-fun DefaultPreview() {
+fun MainActivityPreview() {
     MainScreen()
 }

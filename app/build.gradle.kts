@@ -50,23 +50,24 @@ android {
 
 dependencies {
 
+    implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.material.icons)
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.tooling.preview)
+    implementation(libs.androidx.wear.compose.ui.tooling)
     implementation(libs.androidx.wear.compose.material)
     implementation(libs.androidx.wear.compose.foundation)
     implementation(libs.androidx.wear.compose.navigation)
-    implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.core.splashscreen)
     implementation(libs.google.horologist.compose.layout)
     implementation(libs.google.horologist.compose.material)
+    implementation(libs.google.horologist.tiles)
+    implementation(libs.coil)
     implementation(libs.kotlin.serialization)
 
-    androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.compose.ui.test.junit4)
-
     debugImplementation(libs.androidx.compose.ui.tooling)
-    debugImplementation(libs.androidx.wear.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+    debugImplementation(libs.androidx.wear.tiles.tooling.preview)
+    debugImplementation(libs.androidx.wear.tiles.tooling)
 }

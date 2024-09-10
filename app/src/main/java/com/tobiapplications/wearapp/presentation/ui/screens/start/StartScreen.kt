@@ -7,6 +7,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.wear.compose.material.Button
 import androidx.wear.compose.material.Text
+import androidx.wear.compose.ui.tooling.preview.WearPreviewDevices
 import com.google.android.horologist.annotations.ExperimentalHorologistApi
 import com.google.android.horologist.compose.layout.ScalingLazyColumn
 import com.google.android.horologist.compose.layout.ScreenScaffold
@@ -52,4 +53,10 @@ fun StartScreen(
             }
         }
     }
+}
+
+@WearPreviewDevices
+@Composable
+private fun StartScreenPreview() {
+    StartScreen {  }
 }

@@ -5,6 +5,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.wear.compose.ui.tooling.preview.WearPreviewDevices
 
 @Composable
 fun WorkoutScreen() {
@@ -28,4 +29,10 @@ fun WorkoutScreen() {
 //            )
 //        }
 //    }
+}
+
+@WearPreviewDevices
+@Composable
+private fun WorkoutScreenPreview() {
+   WorkoutScreen()
 }
